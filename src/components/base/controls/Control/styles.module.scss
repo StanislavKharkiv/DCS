@@ -1,0 +1,37 @@
+$error-font-size: 12px;
+$error-margin-top-left: 2px;
+$error-margin-bottom: 4px;
+
+.control {
+  display: grid;
+  gap: 4px;
+  position: relative;
+  word-break: break-all;
+
+  &_inline {
+    display: inline-grid;
+  }
+}
+
+.content {
+  display: grid;
+}
+
+.error {
+  font-size: $error-font-size;
+  color: red;
+  position: absolute;
+  white-space: nowrap;
+
+  &_right {
+    left: calc(100% + #{$error-margin-top-left});
+  }
+
+  &_bottom {
+    top: calc(100% + #{$error-margin-top-left});
+  }
+}
+
+:export {
+  control_error_spacing: $error-font-size + 2 * $error-margin-top-left + $error-margin-bottom;
+}

@@ -1,0 +1,26 @@
+.page {
+  max-width: 100%;
+
+  &_center {
+    margin: auto;
+
+    &_v {
+      margin: auto 0;
+    }
+
+    &_h {
+      margin: 0 auto;
+    }
+  }
+}
+
+.page_title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 12px 0;
+  text-transform: capitalize;
+}
+
+.page_content {
+  overflow-x: auto;
+}
