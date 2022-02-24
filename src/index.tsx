@@ -7,7 +7,7 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { store } from './store'
 
-import './index.css'
+import './styles/main.scss'
 
 ReactDOM.render(
   <React.StrictMode>

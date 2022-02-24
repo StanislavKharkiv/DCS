@@ -17,7 +17,7 @@ export function Page(props: IPageProps) {
       <If condition={title !== undefined}>
         <h2 className={styles.page_title}>{title}</h2>
       </If>
-      <div className={styles.page_content}>{children}</div>
+      {children}
     </div>
   )
 }

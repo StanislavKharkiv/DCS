@@ -1,0 +1,26 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+
+  & > a {
+    margin: 20px;
+  }
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+div.card {
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 5px 1px #8ab4f8;
+  }
+}
